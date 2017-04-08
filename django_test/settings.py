@@ -28,9 +28,11 @@ DEBUG = True
 ALLOWED_HOSTS = ['py.dev']
 
 
-# Application definition
-
+# Application definition,
+# names of all Django applications 
+# that are activated in this Django instance.
 INSTALLED_APPS = [
+	'polls.apps.PollsConfig', # include the pools app in our project,
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kuala_Lumpur'
 
 USE_I18N = True
 
