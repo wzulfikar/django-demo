@@ -33,6 +33,12 @@ ALLOWED_HOSTS = ['py.dev']
 # that are activated in this Django instance.
 INSTALLED_APPS = [
 	'polls.apps.PollsConfig', # include the pools app in our project,
+    
+    # recommended plugin to make 
+    # default admin template responsive. 
+    # see: https://github.com/elky/django-flat-responsive
+    'flat_responsive', 
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
