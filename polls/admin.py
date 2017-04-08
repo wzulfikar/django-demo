@@ -5,3 +5,5 @@ from .models import Question
 
 # Make the poll app modifiable in the admin
 admin.site.register(Question)
+
+admin.site.site_header = 'Django Test Admin Panel'
